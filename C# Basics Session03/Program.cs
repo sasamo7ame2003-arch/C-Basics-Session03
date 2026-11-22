@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Channels;
 
 namespace C__Basics_Session03
@@ -22,15 +23,29 @@ namespace C__Basics_Session03
             //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
             //to check if they point to the same object in memory.
 
-            string Titel1 = "clean code";
+            //string Titel1 = "clean code";
 
-            string Titel2 = "clean code";
+            //string Titel2 = "clean code";
 
-            Console.WriteLine(object.ReferenceEquals(Titel1,Titel2));
+            //Console.WriteLine(object.ReferenceEquals(Titel1,Titel2));
 
 
 
             #endregion
+
+            #region  Question3
+
+            //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
+            // object.Print the final result.
+
+            StringBuilder mo =new StringBuilder();
+            mo.Append("Book List");
+            mo.Append(" - Updated");
+            Console.WriteLine(mo.ToString());
+
+
+            #endregion
+
         }
     }
 }
