@@ -78,6 +78,9 @@ namespace C__Basics_Session03
 
 
             #region Question6
+            //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            //300, otherwise prints "Short Book"
+
             //int Pages = 464;
             //if (Pages <300)
             //{
@@ -90,20 +93,40 @@ namespace C__Basics_Session03
             #endregion
 
             #region Question7
-            int Pages = 464;
-            bool isAvailable =true;
-            if (Pages > 300 && isAvailable == true)
+            //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is
+            //greater than 300 and isAvailable is true.Use the && operator.
+
+            //int Pages = 464;
+            //bool isAvailable =true;
+            //if (Pages > 300 && isAvailable == true)
+            //{
+            //    Console.WriteLine("You can borrow this book");
+            //}
+            #endregion
+
+            #region Question8
+            //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is
+            //"Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else.
+            string Title = "Refactoring";
+
+
+            switch (Title)
             {
-                Console.WriteLine("You can borrow this book");
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!");
+                    break;
+                default:
+                    Console.WriteLine("Never heard of it");
+                    break;
+
             }
-            
-               
 
-
-
-
-
-
+            #endregion
         }
+
     }
 }
+
