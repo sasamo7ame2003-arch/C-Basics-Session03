@@ -125,17 +125,33 @@ namespace C__Basics_Session03
             //}
 
 
-            #endregion Question9
+            #endregion
 
-            #region
-            int Pages = 464;
+            #region Question9
+            //int Pages = 464;
 
-            string sizeLabel = Pages > 300 ? "Long Book" : "Short Book";
-            Console.WriteLine(sizeLabel);
+            //string sizeLabel = Pages > 300 ? "Long Book" : "Short Book";
+            //Console.WriteLine(sizeLabel);
 
 
 
             #endregion
+
+            #region Question10
+
+            //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
+            // to print each book with its position number, like 1.Clean Code.
+
+
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            for (int i = 0; i < books.Length; i++) 
+            {
+                Console.WriteLine(i  +  1 +"." + books[i]);
+            }
+
+
+            #endregion
+
         }
 
     }
