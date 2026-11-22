@@ -185,12 +185,29 @@ namespace C__Basics_Session03
             #region Question13
             //Using the same books array, use a foreach loop to print every book title.
 
-            string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
+            //foreach (string Book in Books)
+            //{
+            //    Console.WriteLine(Book);
+            //}
+            #endregion
+
+            #region Question14
+            //Using the same books array, loop through it and print each title, but stop completely (break) once
+            //you reach "Refactoring".
+            string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             foreach (string Book in Books)
             {
+                if (Book== "Refactoring")
+                    break;
                 Console.WriteLine(Book);
             }
+          
+
+
+                   
+            
             #endregion
         }
 
