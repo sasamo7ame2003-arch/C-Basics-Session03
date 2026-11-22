@@ -1,7 +1,10 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics.Metrics;
+using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C__Basics_Session03
 {
@@ -154,14 +157,29 @@ namespace C__Basics_Session03
 
 
             #region Question11
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            int i = 0;
-            while  (i < books.Length)
-            {
-                Console.WriteLine(books[i]);
-                i++;
-            }
+
+            //Using the same books array, use a while loop to print every book title.
+
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //int i = 0;
+            //while  (i < books.Length)
+            //{
+            //    Console.WriteLine(books[i]);
+            //    i++;
+            //}
             #endregion
+
+            #region Question12
+            //Write a do-while loop that prints "Checking book..." exactly 3 times.
+            int Counter = 0;
+            do
+            {
+               
+                Console.WriteLine("Checking book...");
+                Counter++;
+            } while (Counter < 3);
+
+             #endregion
 
         }
 
