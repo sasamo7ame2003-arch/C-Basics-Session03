@@ -64,17 +64,31 @@ namespace C__Basics_Session03
             //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
             //Pages: 464" using the + operator
 
-            string Title = "Book Clean Code";
-            int Pages = 464;
+            //string Title = "Book Clean Code";
+            //int Pages = 464;
 
 
-              string Concat ="Title name:" + Title + "_" + Pages + "Pages";
-            Console.WriteLine(Concat);
-            Console.WriteLine($"Title name: {Title} _ {Pages} Pages");
-            Console.WriteLine("Title name: {0}_{1}Pages", Title, Pages);
+            //  string Concat ="Title name:" + Title + "_" + Pages + "Pages";
+            //Console.WriteLine(Concat);
+            //Console.WriteLine($"Title name: {Title} _ {Pages} Pages");
+            //Console.WriteLine("Title name: {0}_{1}Pages", Title, Pages);
 
 
             #endregion
+
+
+            #region Question6
+            int Pages = 464;
+            if (Pages >300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+               Console.WriteLine("Short Book");
+            }
+            #endregion
+
 
 
         }
