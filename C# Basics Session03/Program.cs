@@ -51,13 +51,26 @@ namespace C__Basics_Session03
             // Print the result.
 
 
-            StringBuilder mo = new StringBuilder("Book List");
-            mo.Replace("Book List", "Library");
-            mo.Append(" - Updated");
-            Console.WriteLine(mo.ToString());
+            //StringBuilder mo = new StringBuilder("Book List");
+            //mo.Replace("Book List", "Library");
+            //mo.Append(" - Updated");
+            //Console.WriteLine(mo.ToString());
 
 
             #endregion
+
+
+            #region  Question5
+            //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+            //Pages: 464" using the + operator
+
+            string Title = "Book Clean Code";
+            int Pages = 464;
+
+            Console.WriteLine($"Title name : {Title} _ {Pages} Pages");
+
+            #endregion
+
 
         }
     }
