@@ -67,7 +67,12 @@ namespace C__Basics_Session03
             string Title = "Book Clean Code";
             int Pages = 464;
 
-            Console.WriteLine($"Title name : {Title} _ {Pages} Pages");
+
+              string Concat ="Title name:" + Title + "_" + Pages + "Pages";
+            Console.WriteLine(Concat);
+            Console.WriteLine($"Title name: {Title} _ {Pages} Pages");
+            Console.WriteLine("Title name: {0}_{1}Pages", Title, Pages);
+
 
             #endregion
 
