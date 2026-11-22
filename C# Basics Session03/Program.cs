@@ -196,19 +196,35 @@ namespace C__Basics_Session03
             #region Question14
             //Using the same books array, loop through it and print each title, but stop completely (break) once
             //you reach "Refactoring".
+            //string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string Book in Books)
+            //{
+            //    if (Book== "Refactoring")
+            //        break;
+            //    Console.WriteLine(Book);
+            //}
+
+
+
+
+
+            #endregion
+
+            #region Question14
+            //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+            //continue, don't stop the loop).
             string[] Books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             foreach (string Book in Books)
             {
-                if (Book== "Refactoring")
-                    break;
+                if (Book == "The Pragmatic Programmer")
+                    continue;
                 Console.WriteLine(Book);
             }
-          
-
-
-                   
-            
             #endregion
+
+
+
+
         }
 
     }
